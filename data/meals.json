@@ -1,0 +1,18 @@
+[
+    {
+        "code"  :   "SEAFOOD",
+        "name"  :   "Seafood Special",
+        "image" :   "seafoods.jpg",
+        "description"   :   "<p><span>Meal: Fried Salmon Special</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...</p>"
+    } , {
+        "code"  :   "DESSERTS",
+        "name"  :   "Sumptuous Desserts",
+        "image" :   "desserts.jpg",
+        "description"   :   "<p><span>Meal: Choco Ice Cream Sandwich</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...</p>"
+    } , {
+        "code"  :   "BUFFET",
+        "name"  :   "Buffet",
+        "image" :   "buffet.jpg",
+        "description"   :   "<p><span>Meal: Mixed Buffet</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...</p>"
+    }
+]
