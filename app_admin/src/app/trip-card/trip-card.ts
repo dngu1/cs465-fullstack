@@ -17,12 +17,18 @@ export class TripCard implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    
+
   }
 
   public editTrip(trip: Trip) {
     localStorage.removeItem('tripCode');
     localStorage.setItem('tripCode', trip.code);
     this.router.navigate(['edit-trip']);
+  }
+
+  public deleteTrip(trip: Trip) {
+    localStorage.removeItem('tripCode');
+    localStorage.setItem('tripCode', trip.code);
+    this.router.navigate(['delete-trip']);
   }
 }

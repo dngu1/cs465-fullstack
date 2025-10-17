@@ -8,13 +8,15 @@ const tripsController = require('../controllers/trips');
 router
     .route('/trips')
     .get(tripsController.tripsList)    // GET method routes tripsList
-    .post(tripsController.tripsAddTrip);    // POST Method Adds a trip
-
-// GET Method reoutes tripsFindByCode - requires parameter
+    .post(tripsController.tripsAddTrip); // POST Method Adds a trip
+    
+// GET Method routes tripsFindByCode - requires parameter
 // PUT Method routes TripsUpdateTrip - requires parameter
+// DELETE Method routes tripsDeleteTrip - requires parameter
 router
     .route('/trips/:tripCode')
     .get(tripsController.tripsFindByCode)
-    .put(tripsController.tripsUpdateTrip);
+    .put(tripsController.tripsUpdateTrip)
+    .delete(tripsController.tripsDeleteTrip);    // DELETE method deletes a trip
 
 module.exports = router;

@@ -14,22 +14,27 @@ export class TripData {
   url = 'http://localhost:3000/api/trips';
 
   getTrips() : Observable<Trip[]> {
-    // console.log('Inside TripData::getTrips)
+    // console.log('Inside TripData::getTrips')
     return this.http.get<Trip[]>(this.url);
   }
 
   addTrip(formData: Trip) : Observable<Trip> {
-    // console.log('Inside TripData::addTrip)
+    // console.log('Inside TripData::addTrip')
     return this,this.http.post<Trip>(this.url, formData);
   }
 
   getTrip(tripCode: string) : Observable<Trip[]> {
-    // console.log('Inside TripData::getTrip)
+    // console.log('Inside TripData::getTrip')
     return this.http.get<Trip[]>(this.url + '/' + tripCode);
   }
 
   updateTrip(formData : Trip) : Observable<Trip> {
-    // console.log('Inside TripData::updateTrip)
+    // console.log('Inside TripData::updateTrip')
     return this.http.put<Trip>(this.url + '/' + formData.code, formData)
+  }
+
+  deleteTrip(tripCode: string) : Observable<Trip> {
+    // console.log('Inside TripData::deleteTrip')
+    return this.http.delete<Trip>(this.url + '/' + tripCode)
   }
 }
