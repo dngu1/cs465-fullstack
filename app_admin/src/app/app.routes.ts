@@ -4,12 +4,20 @@ import { TripListing } from './trip-listing/trip-listing';
 import { EditTrip } from './edit-trip/edit-trip';
 import { DeleteTrip } from './delete-trip/delete-trip';
 import { Login } from './login/login';
+import { Register } from './register/register';
+import { Reservation } from './reservation/reservation';
+import { Users } from './users/users';
+import { Settings } from './settings/settings';
 
 export const routes: Routes = [
     { path: 'add-trip', component: AddTrip},
     { path: 'edit-trip', component: EditTrip},
     { path: 'delete-trip', component: DeleteTrip},
     { path: 'login', component: Login},
+    { path: 'register', component: Register},
+    { path: 'reservation', component: Reservation},
+    { path: 'users', component: Users},
+    { path: 'settings', component: Settings},
     { path: '', component: TripListing, pathMatch: 'full' }
 ];
 

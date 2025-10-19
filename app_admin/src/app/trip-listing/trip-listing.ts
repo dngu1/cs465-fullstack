@@ -37,6 +37,7 @@ export class TripListing implements OnInit {
   }
   
   private getStuff(): void {
+    //this.authentication.logout();
     this.tripData.getTrips()
       .subscribe({
         next: (value: any) => {
